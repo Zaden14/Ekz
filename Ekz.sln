@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ekz", "Ekz\Ekz.csproj", "{E24760B6-CF7A-46E7-AB81-592A92540BB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassSale", "ClassSale\ClassSale.csproj", "{392FE04A-AE34-4B01-8A62-C3588C79AB47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassSaleTests", "ClassSaleTests\ClassSaleTests.csproj", "{E9DB59AD-D4AD-4CB6-ACEB-50452CF369FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E24760B6-CF7A-46E7-AB81-592A92540BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24760B6-CF7A-46E7-AB81-592A92540BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24760B6-CF7A-46E7-AB81-592A92540BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24760B6-CF7A-46E7-AB81-592A92540BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{392FE04A-AE34-4B01-8A62-C3588C79AB47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{392FE04A-AE34-4B01-8A62-C3588C79AB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{392FE04A-AE34-4B01-8A62-C3588C79AB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{392FE04A-AE34-4B01-8A62-C3588C79AB47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9DB59AD-D4AD-4CB6-ACEB-50452CF369FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9DB59AD-D4AD-4CB6-ACEB-50452CF369FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9DB59AD-D4AD-4CB6-ACEB-50452CF369FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9DB59AD-D4AD-4CB6-ACEB-50452CF369FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C139631-AC91-4693-BB24-F1D99AADB42C}
+	EndGlobalSection
+EndGlobal

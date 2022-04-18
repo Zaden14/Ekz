@@ -1,0 +1,71 @@
+﻿<Page x:Class="Ekz.ShopPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Ekz"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ShopPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0"  HorizontalAlignment="Right" >
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock Text="Количество выбранных книг: "/>
+                <TextBlock Name="TBKol"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Стоимость покупки: "/>
+                <TextBlock Name="TBCost"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Размер скидки: "/>
+                <TextBlock Name="TBSale"/>
+            </StackPanel>
+            <Button Content="Добавить в корзину" Name="BTKor" Width="150" Height="30" Click="BTKor_Click"/>
+            <Button x:Name="BTPer" Content="Перейти в корзину"  Width="150" Height="30" Click="BTPer_Click"/>
+        </StackPanel>
+        <ListView SelectionMode="Multiple" Grid.Row="1" Name="LVList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Name="IArt"  Width="100" Height="100" Source="{Binding Art}" />
+                        <StackPanel >
+                            <TextBlock Text="Название: "></TextBlock>
+                            <TextBlock Text="{Binding Name}"></TextBlock>
+                            <TextBlock Text=" | "></TextBlock>
+                            <TextBlock Text="Жанр: "></TextBlock>
+                            <TextBlock Text="{Binding Genre}"></TextBlock>
+                        </StackPanel>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Автор: "></TextBlock>
+                                <TextBlock Text="{Binding Author}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Цена: "></TextBlock>
+                                <TextBlock Text="{Binding Cost}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Количество в магазине: "></TextBlock>
+                                <TextBlock Text="{Binding CountInShop}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Количество на складе: "></TextBlock>
+                                <TextBlock Text="{Binding CountInStock}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Описание: "></TextBlock>
+                                <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Width="490"></TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>
